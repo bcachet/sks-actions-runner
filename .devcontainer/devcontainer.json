@@ -1,0 +1,21 @@
+{
+	"name": "actions-runner",
+	"build": {
+		"dockerfile": "Dockerfile",
+		"context": "../"
+	},
+	
+	"remoteUser": "vscode",
+
+	"features": {
+		"ghcr.io/devcontainers/features/docker-in-docker:2": {}
+	},
+
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"hashicorp.terraform"
+			]
+		}
+	}
+}
