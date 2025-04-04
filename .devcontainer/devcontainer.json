@@ -1,21 +1,17 @@
 {
-	"name": "actions-runner",
-	"build": {
-		"dockerfile": "Dockerfile",
-		"context": "../"
-	},
-	
-	"remoteUser": "vscode",
+    "name": "actions-runner",
+    "image": "mcr.microsoft.com/devcontainers/base:ubuntu-24.04",
 
-	"features": {
-		"ghcr.io/devcontainers/features/docker-in-docker:2": {}
-	},
+    "remoteUser": "vscode",
 
-	"customizations": {
-		"vscode": {
-			"extensions": [
-				"hashicorp.terraform"
-			]
-		}
-	}
-}
+    "features": {
+        "ghcr.io/devcontainers/features/docker-in-docker:2": {},
+        "ghcr.io/devcontainers/features/terraform:1": {},
+        "ghcr.io/roul/devcontainer-features/bitwarden-cli:1": {},
+        "ghcr.io/devcontainers/features/kubectl-helm-minikube:1": {}
+    },
+
+    "customizations": {
+        "vscode": {
+            "extensions": ["hashicorp.terraform"]
+        }
