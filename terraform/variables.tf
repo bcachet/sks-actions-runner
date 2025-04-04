@@ -34,5 +34,5 @@ variable "worker_type" {
 
 variable "zone" {
     type    = string
-    default = "ch-zrh-1"
+    default = "ch-dk-2"
 }
