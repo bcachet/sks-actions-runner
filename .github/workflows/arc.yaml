@@ -1,0 +1,10 @@
+name: Exo ARC
+
+on:
+    workflow_dispatch:
+
+jobs:
+    hello-from-exo-arc:
+        runs-on: exo-arc-runner
+        steps:
+            - run: echo "🎉 This job uses runner scale set runners!"
