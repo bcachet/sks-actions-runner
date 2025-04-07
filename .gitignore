@@ -3,6 +3,11 @@
 
 !.gitignore
 
+# Github actions
+!.github/
+!.github/workflows/
+!.github/workflows/*
+
 # Documentation
 !README.md
 
