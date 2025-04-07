@@ -4,7 +4,7 @@ resource "exoscale_sks_cluster" "sks" {
   version        = var.kube_version
   description    = "Cluster ${var.name} / ${var.zone}"
   service_level  = "starter"
-  cni            = "calico"
+  cni            = "cilium"
   exoscale_ccm   = true
   exoscale_csi   = true
   metrics_server = true
