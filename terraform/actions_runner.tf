@@ -3,7 +3,7 @@ resource "helm_release" "gha_runner_controller" {
   create_namespace = true
   recreate_pods    = true
   reuse_values     = false
-  name             = "actions-runner-controller"
+  name             = "exo-arc"
   repository       = "oci://ghcr.io/actions/actions-runner-controller-charts"
   chart            = "gha-runner-scale-set-controller"
   version          = "0.11.0"
@@ -24,7 +24,7 @@ resource "helm_release" "gha_runner_scale_set" {
   create_namespace = true
   recreate_pods    = true
   reuse_values     = false
-  name             = "runner-scale-set"
+  name             = "exo-arc-runner"
   repository       = "oci://ghcr.io/actions/actions-runner-controller-charts"
   chart            = "gha-runner-scale-set"
   version          = "0.11.0"
