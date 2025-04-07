@@ -57,6 +57,12 @@ variable "gha_token" {
 
 variable "gha_org" {
   type    = string
-  default = "https://github.com/bcachet"
+  default = "https://github.com/bertrand-cachet"
 
+}
+
+# This variable define the name to be used to select the runner in workflow definition (runs-on: <gh_arc_installation_name>)
+variable "gh_arc_installation_name" {
+  type    = string
+  default = "exo-arc-runner"
 }

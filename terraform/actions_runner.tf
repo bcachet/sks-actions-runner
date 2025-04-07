@@ -24,7 +24,7 @@ resource "helm_release" "gha_runner_scale_set" {
   create_namespace = true
   recreate_pods    = true
   reuse_values     = false
-  name             = "exo-arc-runner"
+  name             = var.gh_arc_installation_name
   repository       = "oci://ghcr.io/actions/actions-runner-controller-charts"
   chart            = "gha-runner-scale-set"
   version          = "0.11.0"
