@@ -8,6 +8,9 @@
 !.github/workflows/
 !.github/workflows/*
 
+# Dockerfiles
+!Dockerfile*
+
 # Documentation
 !README.md
 

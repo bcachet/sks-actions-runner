@@ -36,6 +36,10 @@ resource "helm_release" "gha_runner_scale_set" {
     name  = "githubConfigSecret.github_token"
     value = var.gha_token
   }
+  set {
+    name  = "containerMode.type"
+    value = "dind"
+  }
 
   values = [
     <<-EOT
